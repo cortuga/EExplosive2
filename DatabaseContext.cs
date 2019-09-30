@@ -29,8 +29,8 @@ namespace eexplosive2
       {
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
 #warning Be sure to update to your correct connection string to the point to the correct database
-        var conn = "server=localhost;database=Explosive_api";
-        // db has to = the db
+        var conn = "server=localhost;database=Explosive_api;User Id=postgres;Password=element0";
+        // db has to = the db, then  ";" "User Id = 'user'" in this case it's postgres ; Password=element0
         if (envConn != null)
         {
           conn = ConvertPostConnectionToConnectionString(envConn);
