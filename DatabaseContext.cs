@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using EExplosive2.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -44,5 +45,8 @@ namespace eexplosive2
     {
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
+
+    public DbSet<Explosive> Explosives { get; set; }
+    public DbSet<Mumbling> Mumblings { get; set; }
   }
 }
